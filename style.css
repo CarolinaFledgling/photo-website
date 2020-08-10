@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+
+  background-color: #1b2f33;
+  background-image: linear-gradient(
+    160deg,
+    #1b2f33 50%,
+    #1b2f33 50%,
+    #f16055 100%
+  );
+
+ 
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
