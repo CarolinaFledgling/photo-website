@@ -18,7 +18,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  /* grid-template-rows: 120px 1fr 60px; */
+  grid-template-rows: 120px 1fr 60px;
   grid-template-areas:
     "header"
     "main"
@@ -47,14 +47,15 @@ body {
 /* NAVIGATION */
 
 .logo {
-  margin-left: 2rem;
+  margin-left: 5rem;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
+  flex-grow: 1;
   margin-right: 5rem;
 }
 
@@ -139,13 +140,16 @@ body {
   }
   .nav__list {
     display: block;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 120px;
     right: 0;
     text-align: center;
-    background-color: teal;
-    width: 40%;
-    height: 100%;
+    background-color: #b64941;
+    width: 50%;
+    height: calc(100%-120px);
+    border-radius: 5px 0 0 5px;
+    padding: 2rem 0;
+   
   }
 
   .menu__line {
