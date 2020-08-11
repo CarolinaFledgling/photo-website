@@ -10,6 +10,7 @@
     <meta name="author" content="Nigel Waldron">
     <link rel="icon" type="image/png" href="img/logobeztła 1.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/73cf130a3e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,9 +18,10 @@
 <body>
     <div class="container">
         <header class="header">
-            <a href="index.html" class="header__logo-link"><img src="img/logobeztła 1.png" alt="Logo"
-                    class="header__logo-img"></a>
             <nav class="nav">
+                <!--LOGO-->
+                <a href="index.html" class="header__logo"><img src="img/logobeztła 1.png" alt="Logo" class="logo"></a>
+                <!--Nav list-->
                 <ul class="nav__list">
                     <li class="nav__item"><a href="" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="" class="nav__link">Gallery</a>
@@ -33,6 +35,12 @@
                     <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
                 </ul>
             </nav>
+             <!--hamburger menu-->
+             <a href="#" class="menu">
+                <div class="menu__line menu__line--1"></div>
+                <div class="menu__line menu__line--2"></div>
+                <div class="menu__line menu__line--3"></div>
+            </a>
         </header>
 
 

@@ -5,6 +5,10 @@
   user-select: none;
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -14,7 +18,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 60px 1fr 60px;
+  /* grid-template-rows: 120px 1fr 60px; */
   grid-template-areas:
     "header"
     "main"
@@ -25,15 +29,98 @@ body {
     160deg,
     #1b2f33 50%,
     #1b2f33 50%,
-    #f16055 100%
+    #b64941 100%
   );
-
- 
 }
+
+/* HEADER */
 
 .header {
   grid-area: header;
+  height: 120px;
+  padding: 20px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
+
+/* NAVIGATION */
+
+.logo {
+  margin-left: 2rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-right: 5rem;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav__item {
+  list-style: none;
+}
+
+.nav__link {
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 300;
+  padding: 10px 20px;
+  transition: all 0.5s;
+}
+
+.nav__link:hover {
+  border-bottom: 1px solid #b64941;
+}
+
+/* Button Hamburger */
+
+.menu {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+  width: 3rem;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.menu__line {
+  display: none;
+  width: 100%;
+  height: 0.3rem;
+  background-color: #b64941;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.change .menu__line--1 {
+  transform: rotate(40deg) translate(0.3rem, 1rem);
+}
+
+.change .menu__line--2 {
+  opacity: 0;
+}
+
+.change .menu__line--3 {
+  transform: rotate(-40deg) translate(0.2rem, -1rem);
+}
+
+/* Main */
 
 .main {
   grid-area: main;
@@ -41,4 +128,27 @@ body {
 
 .footer {
   grid-area: footer;
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 1024px) {
+  .nav {
+    display: block;
+    margin: 0;
+  }
+  .nav__list {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-align: center;
+    background-color: teal;
+    width: 40%;
+    height: 100%;
+  }
+
+  .menu__line {
+    display: block;
+  }
 }
