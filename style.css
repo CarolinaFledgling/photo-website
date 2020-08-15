@@ -64,6 +64,7 @@ body {
   justify-content: space-evenly;
   align-items: center;
   list-style-type: none;
+  width: 50%;
 }
 
 .nav__item {
@@ -78,11 +79,61 @@ body {
   font-size: 1.3rem;
   font-weight: 300;
   padding: 10px 20px;
-  transition: all 0.5s;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .nav__link:hover {
   border-bottom: 1px solid #b64941;
+}
+
+
+/* SUBNAVIGATION */
+
+.nav__item--gallery{
+  position: relative;
+  
+
+}
+
+.navSub--gallery{
+  /* display: none; */
+  position: absolute;
+  top:100%;
+  left:30%;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 250ms, opacity 250ms linear;
+  
+
+}
+.navSub__item{
+  list-style: none;
+}
+
+.navSub__link{
+  display: block;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 10px 20px;
+  
+  width: 100%;
+  margin: 0 auto;
+}
+.navSub__link:hover {
+  border-bottom: 1px solid #b64941;
+}
+
+.showSubMenu {
+  /* display: block; */
+visibility: visible;
+opacity: 1;
+transition: opacity 250ms linear;
+  
 }
 
 /* Button Hamburger */
@@ -143,16 +194,40 @@ body {
     position: fixed;
     top: 120px;
     right: 0;
+    width: 300px;
     text-align: center;
     background-color: #b64941;
-    width: 50%;
     height: calc(100%-120px);
     border-radius: 5px 0 0 5px;
     padding: 2rem 0;
-   
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 250ms, opacity 250ms linear;
+    
+  }
+    
+  
+  .nav__link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 10px 20px;
+    transition: all 0.5s;
+    width: 50%;
+    margin: 0 auto;
   }
 
   .menu__line {
     display: block;
+  }
+  .show {
+    /* display: block; */
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 250ms linear;
+    
   }
 }

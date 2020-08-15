@@ -1,15 +1,27 @@
 // Hamburger Menu
 
 const btnHamburger = document.querySelector('.menu')
+const navList = document.querySelector('.nav__list')
+const navSubList = document.querySelector('.navSub--gallery')
+const btnGallery = document.querySelector('.nav__item--gallery')
 
 
-const hamburgerMenu = () =>{
-    btnHamburger.addEventListener('click', () =>{
+const hamburgerMenu = () => {
+    btnHamburger.addEventListener('click', () => {
         btnHamburger.classList.toggle('change')
-       
-        
-
+        navList.classList.toggle('show')
     })
 }
 
-hamburgerMenu()
+hamburgerMenu();
+
+
+// Button Gallery SubMenu
+
+const btnSubMenu = () => {
+    btnGallery.addEventListener('click', () => {
+        navSubList.classList.toggle('showSubMenu')
+    })
+}
+
+btnSubMenu()
