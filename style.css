@@ -92,19 +92,19 @@ body {
 
 .nav__item--gallery{
   position: relative;
-  
+ 
+
 
 }
 
 .navSub--gallery{
-  /* display: none; */
+  
   position: absolute;
-  top:100%;
-  left:30%;
+  
 
-  visibility: hidden;
+  /* visibility: hidden;
   opacity: 0;
-  transition: visibility 0s 250ms, opacity 250ms linear;
+  transition: visibility 0s 250ms, opacity 250ms linear; */
   
 
 }
@@ -129,7 +129,7 @@ body {
 }
 
 .showSubMenu {
-  /* display: block; */
+  
 visibility: visible;
 opacity: 1;
 transition: opacity 250ms linear;
@@ -229,5 +229,16 @@ transition: opacity 250ms linear;
   opacity: 1;
   transition: opacity 250ms linear;
     
+  }
+
+  .nav__item--gallery{
+    position: static;
+  }
+  
+  .navSub--gallery{
+    position: static;
+  }
+  .navSub__item{
+    padding-left: 30px;
   }
 }

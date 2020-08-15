@@ -18,10 +18,23 @@ hamburgerMenu();
 
 // Button Gallery SubMenu
 
-const btnSubMenu = () => {
-    btnGallery.addEventListener('click', () => {
-        navSubList.classList.toggle('showSubMenu')
-    })
-}
+// const btnSubMenu = () => {
+//     btnGallery.addEventListener('click', () => {
+//         navSubList.classList.toggle('showSubMenu')
+//     })
+// }
 
-btnSubMenu()
+// btnSubMenu()
+
+
+let subMenuVisible = false;
+
+btnGallery.addEventListener('click', function () {
+    if (!subMenuVisible) {
+        navSubList.classList.add('showSubMenu')
+        subMenuVisible = true;
+    } else if(subMenuVisible){
+        navSubList.classList.remove('showSubMenu')
+        subMenuVisible = false;
+    }
+})
