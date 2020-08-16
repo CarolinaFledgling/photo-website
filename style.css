@@ -97,16 +97,11 @@ body {
 
 }
 
-.navSub--gallery{
-  
-  position: absolute;
-  
-
-  /* visibility: hidden;
+.navSub--gallery{  
+  position: absolute;  
+  visibility: hidden;
   opacity: 0;
-  transition: visibility 0s 250ms, opacity 250ms linear; */
-  
-
+  transition: visibility 0s 250ms, opacity 250ms linear;
 }
 .navSub__item{
   list-style: none;

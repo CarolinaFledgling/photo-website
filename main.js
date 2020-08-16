@@ -29,11 +29,17 @@ hamburgerMenu();
 
 let subMenuVisible = false;
 
-btnGallery.addEventListener('click', function () {
+console.log(btnGallery);
+
+btnGallery.parentElement.addEventListener('mouseenter', function () {   
     if (!subMenuVisible) {
         navSubList.classList.add('showSubMenu')
         subMenuVisible = true;
-    } else if(subMenuVisible){
+    }
+})
+
+btnGallery.parentElement.addEventListener('mouseleave', function () {   
+    if (subMenuVisible) {
         navSubList.classList.remove('showSubMenu')
         subMenuVisible = false;
     }
