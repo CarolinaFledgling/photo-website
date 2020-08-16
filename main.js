@@ -29,8 +29,6 @@ hamburgerMenu();
 
 let subMenuVisible = false;
 
-console.log(btnGallery);
-
 btnGallery.parentElement.addEventListener('mouseenter', function () {   
     if (!subMenuVisible) {
         navSubList.classList.add('showSubMenu')
