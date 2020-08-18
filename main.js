@@ -18,22 +18,21 @@ hamburgerMenu();
 
 // Button Gallery SubMenu
 
-// const btnSubMenu = () => {
-//     btnGallery.addEventListener('click', () => {
-//         navSubList.classList.toggle('showSubMenu')
-//     })
-// }
-
-// btnSubMenu()
 
 
 let subMenuVisible = false;
 
-btnGallery.addEventListener('click', function () {
+btnGallery.parentElement.addEventListener('mouseenter', function () {
     if (!subMenuVisible) {
         navSubList.classList.add('showSubMenu')
         subMenuVisible = true;
     } else if(subMenuVisible){
+    
+    }
+})
+
+btnGallery.parentElement.addEventListener('mouseleave', function(){
+    if (subMenuVisible) {
         navSubList.classList.remove('showSubMenu')
         subMenuVisible = false;
     }
