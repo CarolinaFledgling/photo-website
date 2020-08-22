@@ -232,18 +232,24 @@ body {
   .navSub__item {
     padding-left: 30px;
   }
+  /* Slider */
+  
+  .slider__img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
 }
 
 /* SLIDER  */
-.main{
+.main {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .slider {
-  max-width: 500px;
-
+  max-width: 600px;
 }
 
 .footer {
