@@ -38,7 +38,10 @@ btnGallery.parentElement.addEventListener('mouseleave', function () {
   }
 })
 
-// Kliknięcie poza nawigacje, żeby sie schowała automatycznie 
+
+
+
+//Hiding the mobile menu when user clicks outside 
 
 
 let specifiedElement = document.getElementById('box');
@@ -66,3 +69,34 @@ document.addEventListener('click', function (event) {
 //   }
 
 // }
+
+
+
+
+
+
+
+// main SLIDER
+
+
+let i = 0; //start point 
+let images = [...document.querySelectorAll('.slider__img')]
+let time = 1000;
+
+function mainSlider() {
+
+
+  for (i = 0; i < images.length; i++) {
+    images[i].style.display = "none";
+  }
+  i++;
+  if (i > images.length) {
+    i = 1;
+  }
+  images[i - 1].style.display = "block";
+  setTimeout(mainSlider, 2000)
+}
+
+mainSlider()
+
+window.onload = mainSlider;
