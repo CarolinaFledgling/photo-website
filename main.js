@@ -101,4 +101,3 @@ let images = document.getElementsByClassName('slider__img')
 
 
 
-window.onload = mainSlider;
