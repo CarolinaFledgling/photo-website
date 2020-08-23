@@ -45,19 +45,15 @@ btnGallery.parentElement.addEventListener('mouseleave', function () {
 
 
 let specifiedElement = document.getElementById('box');
+let menuElement = document.querySelector('.menu');
 
 document.addEventListener('click', function (event) {
-  let isClickInside = specifiedElement.contains(event.target);
-  if (isClickInside) {
-    alert('klinales w nawigacje')
-  } else {
-    alert('kliknales poza nawigacje ')
-    // navList.classList.remove('show')
+  const isClickInside = specifiedElement.contains(event.target) || menuElement.contains(event.target);    
 
-    // navList.hasClass('show')
-
-    // navList.classList.toggle('show').remove('show')
-    // closeNav()
+  if (navList.classList.contains('show') && !isClickInside) {
+    navList.classList.remove('show');
+    btnHamburger.classList.remove('change')
+    console.log('kliknales poza nawigacje');
   }
 });
 
