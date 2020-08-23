@@ -251,6 +251,9 @@ body {
 .slider {
   max-width: 600px;
 }
+.slider__img{
+  display:none;
+}
 
 .footer {
   margin: 0 auto;

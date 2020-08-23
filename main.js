@@ -79,24 +79,26 @@ document.addEventListener('click', function (event) {
 // main SLIDER
 
 
-let i = 0; //start point 
-let images = [...document.querySelectorAll('.slider__img')]
-let time = 2000;
+let liczba = 0; //start point 
+// let images = [...document.querySelectorAll('.slider__img')]
+let time = 3000;
+mainSlider();
 
 function mainSlider() {
-
-
+let i;
+// let images = [...document.querySelectorAll('.slider__img')]
+let images = document.getElementsByClassName('slider__img')
   for (i = 0; i < images.length; i++) {
     images[i].style.display = "none";
   }
-  i++;
-  if (i > images.length) {
-    i = 1;
+  liczba++;
+  if (liczba > images.length) {
+    liczba = 1;
   }
-  images[i - 1].style.display = "block";
+  images[liczba - 1].style.display = "block";
   setTimeout(mainSlider, time)
 }
 
-mainSlider()
+
 
 window.onload = mainSlider;
