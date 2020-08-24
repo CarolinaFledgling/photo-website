@@ -233,29 +233,32 @@ body {
     padding-left: 30px;
   }
   /* Slider */
-  
+
   .slider__img {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
-  
 }
 
 /* SLIDER  */
 .main {
+  grid-area: main;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .slider {
-  max-width: 600px;
+  width: 50vw;
 }
-.slider__img{
-  display:none;
+
+.slider__img {
+  display: none;
 }
 
 .footer {
+  grid-area: footer;
   margin: 0 auto;
   line-height: 60px;
 }

@@ -1,6 +1,6 @@
 // Hamburger Menu
 
-const btnHamburger = document.querySelector('.menu')
+let btnHamburger = document.querySelector('.menu')
 const navList = document.querySelector('.nav__list')
 const navSubList = document.querySelector('.navSub--gallery')
 const btnGallery = document.querySelector('.nav__item--gallery')
@@ -47,28 +47,16 @@ btnGallery.parentElement.addEventListener('mouseleave', function () {
 let specifiedElement = document.getElementById('box');
 
 document.addEventListener('click', function (event) {
-  let isClickInside = specifiedElement.contains(event.target);
-  if (isClickInside) {
-    alert('klinales w nawigacje')
-  } else {
-    alert('kliknales poza nawigacje ')
-    // navList.classList.remove('show')
+  let isClickInside = specifiedElement.contains(event.target) || btnHamburger.contains(event.target)
+  if (navList.classList.contains('show') && !isClickInside) {
+    navList.classList.remove('show')
+    btnHamburger.classList.remove('change')
+    console.log('you click outside')
 
-    // navList.hasClass('show')
-
-    // navList.classList.toggle('show').remove('show')
-    // closeNav()
   }
 });
 
-// function closeNav() {
 
-//   // if(navList.classList.toggle == false)
-//   if (navList.classList.toggle('show', false)) {
-//     navList.classList.remove('show')
-//   }
-
-// }
 
 
 
@@ -85,9 +73,9 @@ let time = 3000;
 mainSlider();
 
 function mainSlider() {
-let i;
-// let images = [...document.querySelectorAll('.slider__img')]
-let images = document.getElementsByClassName('slider__img')
+  let i;
+  // let images = [...document.querySelectorAll('.slider__img')]
+  let images = document.getElementsByClassName('slider__img')
   for (i = 0; i < images.length; i++) {
     images[i].style.display = "none";
   }
@@ -98,6 +86,3 @@ let images = document.getElementsByClassName('slider__img')
   images[liczba - 1].style.display = "block";
   setTimeout(mainSlider, time)
 }
-
-
-
