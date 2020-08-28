@@ -70,7 +70,7 @@ document.addEventListener('click', function (event) {
 let liczba = 0; //start point 
 // let images = [...document.querySelectorAll('.slider__img')]
 let time = 3000;
-mainSlider();
+//mainSlider();
 
 function mainSlider() {
   let i;
@@ -84,5 +84,5 @@ function mainSlider() {
     liczba = 1;
   }
   images[liczba - 1].style.display = "block";
-  setTimeout(mainSlider, time)
+  // setTimeout(mainSlider, time)
 }
