@@ -18,7 +18,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr 60px;
+  grid-template-rows: auto 1fr 40px;
   grid-template-areas:
     "header"
     "main"
@@ -27,9 +27,9 @@ body {
   background-color: #1b2f33;
   background-image: linear-gradient(
     160deg,
-    #1b2f33 50%,
-    #1b2f33 50%,
-    #b64941 100%
+    #1c2021 50%,
+    #151819 50%,
+    #252527 100%
   );
 }
 
@@ -37,7 +37,7 @@ body {
 
 .header {
   grid-area: header;
-  height: 120px;
+  height: 80px;
   padding: 20px 0;
   position: relative;
   display: flex;
@@ -70,10 +70,10 @@ body {
 
 .nav__link {
   display: block;
-  color: white;
+  color: #b2b8c1;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-weight: 300;
   padding: 10px 20px;
   width: 100%;
@@ -173,8 +173,6 @@ body {
 /* SLIDER  */
 .main {
   grid-area: main;
-
-  
 }
 .slider {
   height: 100%;
@@ -193,14 +191,16 @@ body {
   image-rendering: auto;
   image-rendering: crisp-edges;
   /* image-rendering: pixelated; */
+  /* object-fit: scale-down; */
+  
 }
 
 /* footer */
 
 .footer {
   grid-area: footer;
-  margin: 0 auto;
-  line-height: 60px;
+  margin: 0.5rem auto;
+  line-height: 40px;
 }
 
 /* MEDIA */
