@@ -18,7 +18,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr 40px;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "header"
     "main"
@@ -183,24 +183,25 @@ body {
   align-items: center;
   justify-items: center;
   grid-template-areas: "images";
+  border: 2px solid red;
 }
 
 .slider__img {
   height: 100%;
   grid-area: images;
   image-rendering: auto;
-  image-rendering: crisp-edges;
+  image-rendering: crisp-edges; 
   /* image-rendering: pixelated; */
-  /* object-fit: scale-down; */
-  
-}
+ object-fit: scale-down;
 
+
+}
 /* footer */
 
 .footer {
   grid-area: footer;
-  margin: 0.5rem auto;
-  line-height: 40px;
+  text-align: center;
+  margin: 10px;
 }
 
 /* MEDIA */
@@ -253,6 +254,10 @@ body {
   }
   .navSub__item {
     padding-left: 30px;
+  }
+
+  .header__logo{
+    height: 80%;
   }
   /* Slider */
 }
