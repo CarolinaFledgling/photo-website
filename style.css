@@ -18,7 +18,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr 60px;
+  grid-template-rows: 80px 1fr 60px;
   grid-template-areas:
     "header"
     "main"
@@ -173,8 +173,6 @@ body {
 /* SLIDER  */
 .main {
   grid-area: main;
-
-  
 }
 .slider {
   height: 100%;
@@ -188,7 +186,11 @@ body {
 }
 
 .slider__img {
-  height: 100%;
+  height: calc(100vh - 60px - 80px);
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  object-fit: contain;
   grid-area: images;
   image-rendering: auto;
   image-rendering: crisp-edges;
