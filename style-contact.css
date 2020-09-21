@@ -18,7 +18,7 @@ textarea {
 }
 
 .container {
-  height: 100vh;
+  /* height: 100vh; */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 80px 1fr 20px;
@@ -172,12 +172,26 @@ textarea {
 
 .main {
   grid-area: main;
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 
   position: relative;
   overflow: hidden;
+  min-height: calc(100vh -80% -20%); */
+}
+
+.wrapper-contact {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  position: relative;
+  overflow: hidden;
+  min-height: calc(100vh -80% -20%);
 }
 
 .form {
@@ -235,9 +249,10 @@ form {
 .contact__title {
   color: #fff;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1;
-  margin-bottom: 2.5rem;
+  margin-bottom: 0.6rem;
+  text-align: center;
 }
 
 .input-container {
@@ -248,7 +263,7 @@ form {
 .input {
   width: 100%;
   outline: none;
-  border: 2px solid #fafafa;
+  border: 1px solid #fafafa;
   background: none;
   padding: 0.6rem 1.2rem;
   color: #fff;
@@ -262,7 +277,7 @@ form {
 
 .textarea .input {
   padding: 0.8rem 1.2rem;
-  min-height: 150px;
+  min-height: 130px;
   border-radius: 22px;
   resize: none;
   overflow-y: auto;
@@ -342,8 +357,10 @@ form {
 .input-container.focus label {
   top: 0;
   transform: translateY(-50%);
-  left: 5px;
-  font-size: 1rem;
+  left: 0px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .input-container.focus span::before,
@@ -367,6 +384,9 @@ form {
 
 .contact-info__title {
   color: #b64941;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 400;
 }
 
 .text {
@@ -380,9 +400,60 @@ form {
 .information {
   display: flex;
   color: #555;
-  margin: 2rem 0;
+  margin: 0.7rem 0;
   align-items: center;
-  font-size: 1rem;
+  font-size: 0.95rem;
+}
+
+.social-media {
+  padding: 2rem 0 0 0;
+}
+
+.social-media__text {
+  color: #333;
+}
+
+.social-icon {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.social-icon a {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #b34e47, #b64941);
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 0.5rem;
+  transition: 0.3s;
+}
+
+.social-icon a:hover {
+  transform: scale(1.05);
+}
+
+.contact-info::before {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border: 22px solid #b64941;
+  border-radius: 50%;
+  bottom: -77px;
+  right: 50px;
+  opacity: 0.3;
+}
+
+.square {
+  position: absolute;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(181%, 11%);
+  opacity: 0.2;
+  overflow: hidden;
 }
 
 /* footer */
@@ -399,6 +470,8 @@ form {
   .nav {
     display: block;
     margin: 0;
+    
+    
   }
   .nav__list {
     display: block;
@@ -414,6 +487,7 @@ form {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s 250ms, opacity 250ms linear;
+   
   }
 
   .nav__link {
@@ -453,5 +527,86 @@ form {
 
   .header__svg {
     height: 46px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info:before {
+    bottom: initial;
+    top: -75px;
+    right: 65px;
+    transform: scale(0.95);
+  }
+
+  .contact-form::before {
+    top: 13px;
+    left: initial;
+    right: 70px;
+  }
+
+  .square {
+    transform: translate(140%, 43%);
+    height: 300px;
+  }
+
+  .text {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  .social-media__text {
+    padding: 1.5rem 0 0 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper-contact {
+    padding: 1.5rem;
+  }
+
+  .contact-form::before {
+    display: none;
+  }
+
+  .square {
+    display: none;
+  }
+
+  form,
+  .contact-info {
+    padding: 1.7rem 1.6rem;
+  }
+
+  .text,
+  .information,
+  .social-media__text {
+    font-size: 0.8rem;
+  }
+
+  .title,
+  .contact__title,
+  .contact-info__title {
+    font-size: 1.15rem;
+  }
+
+  .social-icon a{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+
+  .icon {
+    width: 23px;
+  }
+
+  .input {
+    padding: 0.45rem 1.2rem;
+  }
+
+  .btn__submit {
+    padding: 0.45rem 1.2rem;
   }
 }
