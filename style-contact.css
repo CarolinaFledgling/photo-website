@@ -7,6 +7,7 @@
 
 html {
   font-size: 100%;
+  font-family: Roboto;
 }
 
 body,
@@ -236,15 +237,13 @@ form {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 1;
-  margin-bottom: 0.7rem;
+  margin-bottom: 2.5rem;
 }
 
 .input-container {
   position: relative;
   margin: 1rem 0;
 }
-
-
 
 .input {
   width: 100%;
@@ -253,11 +252,12 @@ form {
   background: none;
   padding: 0.6rem 1.2rem;
   color: #fff;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
   border-radius: 25px;
   transition: 0.3s;
+  margin: 1rem 0;
 }
 
 .textarea .input {
@@ -269,43 +269,89 @@ form {
 }
 
 .input-container label {
-    position: absolute;
-    top:50%;
-    left:15px;
-    transform: translateY(-50%);
-    padding: 0 0.4rem;
-    color: #fafafa;
-    font-size: 0.9rem;
-    font-weight: 400;
-    pointer-events: none;
-    z-index: 1000;
-    transition: 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  padding: 0 0.4rem;
+  color: #fafafa;
+  font-size: 0.9rem;
+  font-weight: 400;
+  pointer-events: none;
+  z-index: 1000;
+  transition: 0.5s;
 }
 
-.input-container.textarea label{
-    top: 1rem;
-    transform: translateY(0);
+.input-container.textarea label {
+  top: 1rem;
+  transform: translateY(0);
 }
 
-.btn__submit{
-    padding: 0.6rem 1.3rem;
-    background-color: #fff;
-    border: 2px solid #fafafa;
-    font-size: 0.95rem;
-    color: #b64941;
-    line-height: 1;
-    border-radius: 25px;
-    outline: none;
-    cursor: pointer;
-    transition: 0.3s;
+.btn__submit {
+  padding: 0.6rem 1.3rem;
+  background-color: #fff;
+  border: 2px solid #fafafa;
+  font-size: 0.95rem;
+  color: #b64941;
+  line-height: 1;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.btn__submit:hover{
-    background-color: transparent;
-    color: #fff;
+.btn__submit:hover {
+  background-color: transparent;
+  color: #fff;
 }
 
+.input-container span {
+  position: absolute;
+  top: 0;
+  left:35px;
+  transform: translateY(70%);
+  font-size: 0.8rem;
+  padding: 0 0.5rem;
+  color: transparent;
+  pointer-events: none;
+  z-index: 500;
+  /* background-color: black; */
+}
 
+.input-container span::before,
+.input-container span::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  opacity: 0;
+  transition: 0.3s;
+  height: 10px;
+  background-color: #b64941;
+  top: 40%;
+  transform: translate(-40%);
+}
+
+.input-container span::before {
+  left: 50%;
+}
+
+.input-container span::after {
+  right: 50%;
+}
+
+.input-container.focus label {
+  top: 0;
+  transform: translateY(-50%);
+  left: 5px;
+  font-size: 1rem;
+  
+}
+
+.input-container.focus span::before,
+.input-container.focus span::after {
+  width: 50%;
+  opacity: 1;
+}
 
 /* footer */
 
