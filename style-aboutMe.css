@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  /* height: 100vh; */
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 80px 1fr 20px;
@@ -47,6 +47,7 @@ body {
 
 .header__svg {
   margin: 0px auto;
+  
 }
 
 .nav {
@@ -184,6 +185,7 @@ body {
   flex-direction: row;
   text-align: center;
   justify-content: center;
+  height: calc(100vh - 20px - 80px);
 
   
 }
@@ -210,6 +212,10 @@ body {
   text-align: left;
   padding: 1rem;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
 }
 
 .heading {

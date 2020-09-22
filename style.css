@@ -46,7 +46,8 @@ body {
 /* NAVIGATION */
 
 .header__svg {
-  margin: 0px auto;
+  padding: 5px 0;
+  margin: 0 auto;
 }
 
 .nav {
@@ -221,15 +222,10 @@ body {
 /* footer */
 
 .footer {
- 
   grid-area: footer;
   text-align: center;
   font-size: 0.7rem;
 }
-
-
-
-
 
 /* MEDIA */
 
