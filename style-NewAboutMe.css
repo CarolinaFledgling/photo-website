@@ -1,8 +1,10 @@
 /* MAIN About me */
 .main {
-  display: flex;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: minmax(200px, auto)  minmax(500px, auto);
+  align-content: center;
   justify-content: center;
-  align-items: center;
 }
 
 /* Container About Me */
@@ -10,13 +12,7 @@
     grid-template-rows: 80px 1fr 20px;
 }
 
-.wrapper {
-  width: 90%;
-  display: grid;
-  grid-template-columns: 500px 1fr;
-  align-items: center;
-  justify-items: center;
-}
+
 .left-side {
 
   display: flex;
@@ -111,22 +107,14 @@
   /* MAIN */
 
   .main {
-    flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 100%;
-   
-  }
-
-  .wrapper {
-    width: 100%;
+    padding: 0;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    align-items: center;
-    justify-items: center;
     
+   
   }
+
 
   .left-side img {
     display: none;
