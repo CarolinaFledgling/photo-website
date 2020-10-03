@@ -57,14 +57,7 @@ document.addEventListener('click', function (event) {
 });
 
 
-
-
-
-
-
-
-
-// main SLIDER
+// MAIN SLIDER
 
 
 let liczba = 0; //start point 
