@@ -55,7 +55,6 @@ body {
   align-items: center;
   width: 100%;
   margin-right: 5rem;
- 
 }
 
 .nav__list {
@@ -93,9 +92,9 @@ body {
 
 .fa-caret-down {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 90%;
-  transform: translateY(-45%);
+  transform: translateY(-50%);
   font-size: 1rem;
 }
 
@@ -174,7 +173,6 @@ body {
   grid-area: main;
 }
 
-
 .slider {
   height: 100%;
   width: 100%;
@@ -199,7 +197,6 @@ body {
   grid-area: images;
   image-rendering: auto;
   image-rendering: crisp-edges;
- 
 }
 /* footer */
 
@@ -230,7 +227,6 @@ body {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s 250ms, opacity 250ms linear;
-    
   }
 
   .nav__link {
@@ -264,12 +260,15 @@ body {
     color: black;
     padding: 10px;
     font-weight: 400;
-    text-align: left;
-    width: 50%;
+    text-align: center;
+    width: 100%;
   }
 
   .header__svg {
     height: 46px;
   }
-}
 
+  .fa-caret-down {
+    left: 75%;
+  }
+}
