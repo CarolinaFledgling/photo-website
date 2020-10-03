@@ -9,7 +9,8 @@
 
 /* Container About Me */
 .container {
-    grid-template-rows: 80px 1fr 20px;
+  min-height: 100vh;
+  height: auto;
 }
 
 
