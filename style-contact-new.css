@@ -32,6 +32,8 @@
 
 .contact-info__title {
   margin-bottom: 2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 .contact-info__text {
@@ -67,12 +69,14 @@
 }
 
 .social-media {
-  padding: 1.2rem 0 0 0;
+  padding: 1rem 0 0 0;
 }
 
 .social-media__text {
   color: #333;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  text-align: center;
 }
 
 .social-icon {
@@ -81,19 +85,24 @@
   justify-content: center;
 }
 
+
 .social-icon a {
-  width: 35px;
-  height: 35px;
-  border-radius: 5px;
-  background: linear-gradient(45deg, #b34e47, #b64941);
-  color: #fff;
+  width: 3rem;
+  height: 3rem;
+  background: #b64941;
+  border-radius: 50%;
   text-align: center;
-  line-height: 35px;
-  transition: 0.3s;
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 3rem;
+  transition: 0.5s;
 }
 
 .social-icon a:hover {
-  transform: scale(1.05);
+  background: #b64941;
+  color: #000;
+ 
+  
 }
 
 .contact-info::before {
@@ -103,8 +112,8 @@
   height: 110px;
   border: 22px solid #b64941;
   border-radius: 50%;
-  bottom: -77px;
-  right: 50px;
+  top: -100px;
+  right: 0px;
   opacity: 0.3;
 }
 
@@ -116,7 +125,7 @@
   border: 22px solid #b64941;
   border-radius: 50%;
   top: 307px;
-  left: -60px;
+  left: -100px;
   opacity: 0.3;
 }
 
