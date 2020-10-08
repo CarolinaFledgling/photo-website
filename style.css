@@ -18,7 +18,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 80px 1fr 20px;
+  grid-template-rows: 40px 1fr 20px;
   grid-template-areas:
     "header"
     "main"
@@ -137,8 +137,8 @@ body {
   top: 50%;
   right: 10%;
   transform: translate(-50%, -50%);
-  width: 3rem;
-  height: 2rem;
+  width: 2rem;
+  height: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -155,7 +155,7 @@ body {
 }
 
 .change .menu__line--1 {
-  transform: rotate(40deg) translate(0.3rem, 1rem);
+  transform: rotate(45deg) translate(-0.2rem, 1rem);
 }
 
 .change .menu__line--2 {
@@ -163,7 +163,7 @@ body {
 }
 
 .change .menu__line--3 {
-  transform: rotate(-40deg) translate(0.2rem, -1rem);
+  transform: rotate(-45deg) translate(-0.3rem, -1rem);
 }
 
 /* Main */
@@ -189,11 +189,12 @@ body {
   *  80px - header height
   *  10px - margin height between footer and image
   */
-  height: calc(100vh - 20px - 80px - 10px);
+  height: calc(100vh - 20px - 40px - 10px);
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
   object-fit: contain;
+  object-position: ;
   grid-area: images;
   image-rendering: auto;
   image-rendering: crisp-edges;
