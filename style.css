@@ -199,16 +199,14 @@ body {
   image-rendering: auto;
   image-rendering: crisp-edges;
   pointer-events: none;
-
 }
 /* footer */
 
 .footer {
   grid-area: footer;
-  text-align: right;
+  text-align: center;
   font-size: 0.7rem;
-  padding-right: 3rem;
-  color: #FFF;
+  color: #fff;
 }
 
 /* MEDIA */
