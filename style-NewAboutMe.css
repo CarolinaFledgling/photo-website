@@ -2,7 +2,7 @@
 .main {
   padding: 0 2rem;
   display: grid;
-  grid-template-columns: minmax(200px, auto)  minmax(500px, auto);
+  grid-template-columns: minmax(200px, 1fr)  minmax(500px, 1fr);
   align-content: center;
   justify-content: center;
 }
@@ -79,6 +79,7 @@
   font-weight: 300;
   color: rgba(253, 253, 253, 0.5);
   line-height: 1.8rem;
+  width: 80%;
 }
 
 .icons {
@@ -165,6 +166,7 @@
     font-weight: 400;
     color: rgba(253, 253, 253, 0.5);
     line-height: 1.5rem;
+   
   }
 
   .icons {

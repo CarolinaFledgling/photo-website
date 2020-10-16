@@ -45,6 +45,13 @@ body {
 
 /* NAVIGATION */
 
+.nav__logo-img{
+  width: 160px;
+  padding-left: 2rem;
+  padding-top:1rem ;
+}
+
+
 .header__svg {
   padding: 5px 0;
   margin: 0 auto;
@@ -234,7 +241,7 @@ body {
 
   .nav__link {
     display: block;
-    color: white;
+    color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 0.9rem;
