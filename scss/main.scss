@@ -1,7 +1,10 @@
 @import "_normalize.scss";
 @import "_variables.scss";
+@import "_mixin.scss";
 
 //Modules
 
 @import"modules/_reset";
 @import"modules/_typography";
+@import"modules/_layout";
+@import"modules/_aboutMe";

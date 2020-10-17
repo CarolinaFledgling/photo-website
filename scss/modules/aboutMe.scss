@@ -1,0 +1,94 @@
+ .main{
+     @include display-grid;
+     padding: 0 2rem;
+     grid-template-columns: minmax(200px, 1fr)  minmax(500px, 1fr);
+ }
+
+ .container{
+     @include container;
+ }
+
+
+
+.branding{
+    @include display-flex;
+&__img{
+    display: block;
+  width: 80%;
+  image-rendering: auto;
+}
+
+}
+
+.description {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__heading{
+        color:$third-color;
+        @include heading;
+    }
+
+    &__span {
+        display: block;
+        margin-bottom: 20px;
+        width: 80px;
+        height: 3px;
+        background:$third-color;
+      }
+  }
+
+
+  .name{
+    display: flex;
+    width: 400px;
+    height: 60px;
+    padding: 0 10px;
+    align-items: center;
+    background: $primary-color;
+    box-shadow: 2px 5px 5px 0px rgba(0, 0, 0, 0.15);
+    margin-top: 40px;
+    margin-left: -150px;
+    margin-bottom: 30px;
+
+&__title{
+  padding: 10px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: $secondary-color;
+}
+
+
+  }
+
+
+  .personal-info {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(253, 253, 253, 0.5);
+    line-height: 1.8rem;
+    width: 80%;
+  }
+
+  .icon {
+    margin-top: 2rem;
+
+    &__fab{
+        width: 3rem;
+  height: 3rem;
+  background: $primary-color;
+  border-radius: 50%;
+  text-align: center;
+  color: $secondary-color;
+  font-size: 1.3rem;
+  line-height: 3rem;
+    }
+    &__fab:hover{
+        background:$third-color;
+        color: $primary-color;
+        transition: 0.5s linear;
+    }
+  }
+

@@ -14,39 +14,43 @@
 }
 
 
-.left-side {
+.branding {
 
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 0.5rem;
+  /* padding-left: 0.5rem; */
 }
 
-.left-side img {
-  width: 100%;
-  height: 100%;
+.branding__img {
+  display: block;
+  width: 80%;
   image-rendering: auto;
 }
 
-.right-side {
+.description {
   text-align: left;
-  padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.heading {
- 
+.description__heading {
   font-size: 1.5rem;
   font-weight: 600;
   color: #b64941;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
+.description__span {
+  display: block;
+  margin-bottom: 20px;
+  width: 80px;
+  height: 3px;
+  background: #b64941;
+}
 
 .name {
-  
   display: flex;
   width: 400px;
   height: 60px;
@@ -59,22 +63,15 @@
   margin-bottom: 30px;
 }
 
-.name__heading {
+.name__title {
   padding: 10px;
   font-size: 1.8rem;
   font-weight: 400;
   color: #000;
 }
-.right-side span {
-  display: block;
-  
-  margin-bottom: 20px;
-  width: 80px;
-  height: 3px;
-  background: #b64941;
-}
 
-.description {
+
+.personal-info {
   font-size: 1rem;
   font-weight: 300;
   color: rgba(253, 253, 253, 0.5);
@@ -82,11 +79,11 @@
   width: 80%;
 }
 
-.icons {
+.icon {
   margin-top: 2rem;
 }
 
-.icons .fab {
+.icon__fab {
   width: 3rem;
   height: 3rem;
   background: #fff;
@@ -97,10 +94,10 @@
   line-height: 3rem;
 }
 
-.icons .fab:hover {
+.icon__fab:hover {
   background: #b64941;
   color: #fff;
-  transition: 0.5s;
+  transition: 0.5s linear;
 }
 
 /* MEDIA */
@@ -113,28 +110,24 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     
    
   }
+  .description{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+  }
 
-
-  .left-side img {
+  .branding {
     display: none;
   }
-
-  .left-side {
-    display: none;
-  }
-
-  .right-side {
-    width: 100%;
-  }
-  .right-side span {
-    width: 50px;
-    height: 1px;
-  }
-
-  .heading {
+  
+  .description__heading {
     font-size: 0.8rem;
   }
 
@@ -147,13 +140,13 @@
     padding: 0 8px;
   }
 
-  .name__heading {
+  .name__title {
     padding: 10px;
     font-size: 1.2rem;
     font-weight: 400;
     color: #000;
   }
-  .right-side span {
+  .description span {
     display: block;
     margin-bottom: 10px;
     width: 80px;
@@ -161,11 +154,13 @@
     background: #b64941;
   }
 
-  .description {
+  .personal-info {
+    padding: 2rem 0;
     font-size: 0.8rem;
     font-weight: 400;
     color: rgba(253, 253, 253, 0.5);
     line-height: 1.5rem;
+    text-align: center;
    
   }
 
