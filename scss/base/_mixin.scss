@@ -23,3 +23,27 @@
   letter-spacing: 3px;
 
 }
+
+@mixin icon{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 3rem;
+}
+
+@mixin transition{
+    transition: 0.5s linear;
+}
+
+@mixin circle{
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    border: 22px solid #b64941;
+    border-radius: 50%;
+    opacity: 0.3;
+}

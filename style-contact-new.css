@@ -2,7 +2,7 @@
   height: 100%;
   display: grid;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   grid-template-columns: auto;
 }
 .nav__list {
@@ -44,26 +44,27 @@
 }
 
 .info {
+  height: auto;
   display: flex;
   flex-direction: column;
-  padding: 1.2rem;
   justify-content: center;
+  padding: 1rem 0;   
 }
 
-.information {
+.info-details {
   display: flex;
   margin: 0.7rem 0;
   align-items: center;
   font-size: 0.95rem;
 }
 
-.icon__information {
+.info-details__icon {
   font-size: 1.8rem;
   color: #b64941;
   margin-right: 1rem;
 }
 
-.information__link {
+.info-details__link {
   text-decoration: none;
   color: #333;
 }
@@ -79,30 +80,27 @@
   text-align: center;
 }
 
-.social-icon {
-  display: flex;
-  margin-top: 0.5rem;
-  justify-content: center;
+.icon {
+  margin-top: 1rem;
+  text-align: center;
 }
 
-
-.social-icon a {
+.icon__fab {
   width: 3rem;
   height: 3rem;
   background: #b64941;
   border-radius: 50%;
   text-align: center;
   color: #fff;
+  font-weight: 500;
   font-size: 1.3rem;
   line-height: 3rem;
-  transition: 0.5s;
 }
 
-.social-icon a:hover {
-  background: #b64941;
-  color: #000;
- 
-  
+.icon__fab:hover {
+  background: #333;
+  color: #fff;
+  transition: 0.5s linear;
 }
 
 .contact-info::before {

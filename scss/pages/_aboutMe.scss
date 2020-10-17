@@ -12,10 +12,10 @@
 
 .branding{
     @include display-flex;
-&__img{
-    display: block;
-  width: 80%;
-  image-rendering: auto;
+    &__img{
+      display: block;
+      width: 80%;
+      image-rendering: auto;
 }
 
 }
@@ -53,11 +53,11 @@
     margin-left: -150px;
     margin-bottom: 30px;
 
-&__title{
-  padding: 10px;
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: $secondary-color;
+     &__title{
+        padding: 10px;
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: $secondary-color;
 }
 
 
@@ -76,14 +76,14 @@
     margin-top: 2rem;
 
     &__fab{
-        width: 3rem;
-  height: 3rem;
-  background: $primary-color;
-  border-radius: 50%;
-  text-align: center;
-  color: $secondary-color;
-  font-size: 1.3rem;
-  line-height: 3rem;
+      width: 3rem;
+      height: 3rem;
+      background: $primary-color;
+      border-radius: 50%;
+      text-align: center;
+      color: $secondary-color;
+      font-size: 1.3rem;
+      line-height: 3rem;
     }
     &__fab:hover{
         background:$third-color;

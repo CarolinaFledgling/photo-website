@@ -1,10 +1,28 @@
-@import "_normalize.scss";
-@import "_variables.scss";
-@import "_mixin.scss";
+// Base
+@import "base/_normalize.scss";
+@import "base/_variables";
+@import "base/_mixin";
+@import"base/_reset";
+@import"base/_typography";
 
-//Modules
 
-@import"modules/_reset";
-@import"modules/_typography";
-@import"modules/_layout";
-@import"modules/_aboutMe";
+// Pages
+// @import"pages/_aboutMe";
+// @import"pages/_contact";
+
+// Dlaczego są tutaj nadpisywane style ???????????????????????????
+
+// Components
+
+@import"components/_slideShow";
+@import"components/_menu";
+@import"components/_icon";
+
+
+// Layouts
+
+@import"layouts/_footer";
+@import"layouts/_header";
+
+
+
