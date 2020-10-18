@@ -1,0 +1,45 @@
+/* SUBNAVIGATION */
+
+.nav__item--gallery {
+    position: relative;
+  }
+  
+  .fa-caret-down {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+  }
+  
+  .navSub--gallery {
+    display: none;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s, opacity 0.5s linear;
+  }
+  .navSub__item {
+    list-style: none;
+  }
+  
+  .navSub__link {
+    display: block;
+    color: #b64941;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 15px;
+    margin: 0 auto;
+    letter-spacing: 1px;
+  }
+  .navSub__link:hover {
+    border-bottom: 1px solid #b64941;
+  }
+  
+  .showSubMenu {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;

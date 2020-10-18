@@ -9,14 +9,15 @@
 // Pages
 // @import"pages/_aboutMe";
 // @import"pages/_contact";
+// @import"pages/_homePage";
 
 // Dlaczego są tutaj nadpisywane style ???????????????????????????
 
 // Components
 
 @import"components/_slideShow";
-@import"components/_menu";
-@import"components/_icon";
+@import"components/_nav";
+@import"components/_sub-nav";
 
 
 // Layouts
@@ -26,3 +27,23 @@
 
 
 
+//  GDZIE można przypisać ta klase odpowiedzilana za rozmieszczenie /wyglad strony głownej (stworzyłam homepage ?)
+
+// .container {
+//     height: 100vh;
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     grid-template-rows: 40px 1fr 20px;
+//     grid-template-areas:
+//       "header"
+//       "main"
+//       "footer";
+  
+//     background-color: #1a2224;
+//     background-image: linear-gradient(
+//           160deg,
+//           #1c2021 50%,
+//           #151819 50%,
+//           #252527 100%
+//         );
+//   }

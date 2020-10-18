@@ -365,4 +365,117 @@ html {
 * {
   font-family: "Roboto", sans-serif;
 }
+
+/* SLIDER  */
+.main {
+  grid-area: main;
+}
+
+.slider {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "images";
+}
+
+.slider__img {
+  /* 20px - footer height
+        *  80px - header height
+        *  10px - margin height between footer and image
+        */
+  height: calc(100vh - 20px - 40px - 10px);
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  /* object-position: top ; */
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: images;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  pointer-events: none;
+}
+
+/* NAVIGATION */
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-right: 5rem;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.nav__item {
+  list-style: none;
+}
+
+.nav__link {
+  display: block;
+  color: #b2b8c1;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 300;
+  padding: 10px 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav__link:hover {
+  border-bottom: 1px solid #b64941;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+  font-size: 0.7rem;
+  color: #fff;
+}
+
+.header {
+  grid-area: header;
+  height: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header___logo-img {
+  width: 160px;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
 /*# sourceMappingURL=main.css.map */

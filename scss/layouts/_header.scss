@@ -1,0 +1,13 @@
+.header {
+    grid-area: header;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &___logo-img {
+        width: 160px;
+        padding-left: 2rem;
+        padding-top: 1rem;
+      }
+  }

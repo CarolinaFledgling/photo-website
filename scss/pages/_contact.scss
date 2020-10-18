@@ -97,17 +97,13 @@
 
 
   .icon{
-    margin-top: 1rem;
-    text-align: center;
-
+    @include iconTwitter;
     &__fab{
-        @include icon;
         background: $third-color;
         color: $primary-color;
     }
 
     &__fab:hover{
-        @include transition;
         background: $secondary-color;
         color: $primary-color;
     }

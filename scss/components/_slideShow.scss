@@ -1,1 +1,33 @@
 
+/* SLIDER  */
+.main {
+    grid-area: main;
+  }
+  
+.slider {
+    @include display-grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "images";
+
+     &__img{
+        /* 20px - footer height
+        *  80px - header height
+        *  10px - margin height between footer and image
+        */
+        height: calc(100vh - 20px - 40px - 10px);
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        object-fit: contain;
+        /* object-position: top ; */
+        grid-area: images;
+        image-rendering: auto;
+        image-rendering: crisp-edges;
+        pointer-events: none;
+     }
+  }
+  
+ 
