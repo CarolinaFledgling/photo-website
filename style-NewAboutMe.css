@@ -118,8 +118,9 @@
    
   }
   .description{
+    padding: 2rem 0;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
   }
 
@@ -155,7 +156,7 @@
   }
 
   .personal-info {
-    padding: 2rem 0;
+    padding: 1rem 0;
     font-size: 0.8rem;
     font-weight: 400;
     color: rgba(253, 253, 253, 0.5);

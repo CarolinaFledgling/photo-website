@@ -16,4 +16,68 @@
           #252527 100%
         );
   }
+
+
+  //  Responsive
+
+  @include media-md {
+    .nav {
+      display: block;
+      margin: 0;
+       &__list{
+        display: block;
+        position: fixed;
+        top: 70px;
+        right: 0;
+        width: 50%;
+        text-align: center;
+        background-color: $third-color;
+        height: calc(100%-80px);
+        border-radius: 5px 0 0 5px;
+        padding: 0.5rem 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s 250ms, opacity 250ms linear;
+       }
+
+       &__link{
+        color: $primary-color;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        font-weight: 300;
+        padding: 10px;
+        transition: all 0.5s;
+        margin: 0 auto;
+        text-align: center;
+        width: 50%;
+       }
+    }
+  
+    
+    .menu__line {
+      display: block;
+    }
+    .show {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 250ms linear;
+    }
+  
+    .navSub {
+      position: static;
+    }
+  
+    .navSub__link {
+      color: $secondary-color;
+      padding: 10px;
+      font-weight: 400;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .fa-caret-down {
+      left: 75%;
+    }
+  }
   

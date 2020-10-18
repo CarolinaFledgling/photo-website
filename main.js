@@ -2,8 +2,8 @@
 
 let btnHamburger = document.querySelector('.menu')
 const navList = document.querySelector('.nav__list')
-const navSubList = document.querySelector('.navSub--gallery')
-const btnGallery = document.querySelector('.nav__item--gallery')
+const navSubList = document.querySelector('.navSub')
+const btnGallery = document.querySelector('.nav__link--click')
 
 
 const hamburgerMenu = () => {

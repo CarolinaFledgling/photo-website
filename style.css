@@ -87,7 +87,7 @@ body {
 
 /* SUBNAVIGATION */
 
-.nav__item--gallery {
+.nav__link--click {
   position: relative;
 }
 
@@ -99,7 +99,7 @@ body {
   font-size: 1rem;
 }
 
-.navSub--gallery {
+.navSub {
   display: none;
   position: absolute;
   visibility: hidden;
@@ -245,7 +245,7 @@ body {
     transition: all 0.5s;
     margin: 0 auto;
     text-align: center;
-    width: 100%;
+    width: 50%;
   }
 
   .menu__line {
@@ -257,7 +257,7 @@ body {
     transition: opacity 250ms linear;
   }
 
-  .navSub--gallery {
+  .navSub {
     position: static;
   }
 
@@ -273,3 +273,5 @@ body {
     left: 75%;
   }
 }
+
+
