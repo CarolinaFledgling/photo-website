@@ -1,14 +1,21 @@
-body{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
-a{
-    color:$primary-color;
+a {
+    color: $primary-color;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
-span, img, li, ::before, ::after{
+a,
+span,
+img,
+li,
+::before,
+::after {
     display: block;
 }

@@ -1,3 +1,20 @@
+//Color
+
 $primary-color: #fff;
 $secondary-color:#333;
 $third-color:#b64941;
+
+// Sizes
+
+$footer-height: 40px;
+$header-height: 40px;
+$main-height: 1fr;
+$footer-margin-height: 10px;
+
+//BREAKPOINTS
+$breakpoints: (
+  'sm': '576px',
+  'md': '768px',
+  'lg': '992px',
+  'xl': '1200px',
+);
