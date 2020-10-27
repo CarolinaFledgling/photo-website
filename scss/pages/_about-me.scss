@@ -42,7 +42,10 @@
 
     &__heading {
       color: $third-color;
-      @include heading;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 3px;
     }
 
     &__span {

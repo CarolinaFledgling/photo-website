@@ -10,16 +10,6 @@
     justify-content: center;
 }
 
-
-
-@mixin heading {
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-
-}
-
 @mixin transition {
     transition: 0.5s linear;
 }
