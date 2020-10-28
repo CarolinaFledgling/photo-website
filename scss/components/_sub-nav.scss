@@ -3,77 +3,72 @@
 .nav__link--click {
   position: relative;
 }
-    
+
 .navSub {
-    display: none;
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s 0.5s, opacity 0.5s linear;
+  display: none;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.5s, opacity 0.5s linear;
 
-     &__item{
-      list-style: none;
-     }
-
-     &__link{
-      display: block;
-      color: #b64941;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 0.8rem;
-      font-weight: 600;
-      padding: 15px;
-      margin: 0 auto;
-      letter-spacing: 1px;
-
-      // Responsive 
-      @include breakpoint-responsive('md'){
-          color: $secondary-color;
-          padding: 10px;
-          font-weight: 400;
-          text-align: center;
-          width: 100%;
-        } 
-     }
-
-     &__link:hover{
-      border-bottom: 1px solid $third-color;
-     }
-      // Responsive 
-      @include breakpoint-responsive('md'){
-        position: static;
-      }
-
+  &__item {
+    list-style: none;
   }
-  
-  // Class which show sub-menu 
-  .showSubMenu {
+
+  &__link {
     display: block;
+    color: #b64941;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 15px;
+    margin: 0 auto;
+    letter-spacing: 1px;
+
+    // Responsive
+    @include breakpoint-responsive("md") {
+      color: $secondary-color;
+      padding: 10px;
+      font-weight: 400;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  &__link:hover {
+    border-bottom: 1px solid $third-color;
+  }
+  // Responsive
+  @include breakpoint-responsive("md") {
+    position: static;
+  }
+}
+
+// Class which show sub-menu
+.showSubMenu {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s linear;
+}
+
+.fa-caret-down {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+
+  @include breakpoint-responsive("md") {
+    left: 80%;
+  }
+}
+// Class which show mobile navigation
+.show {
+  @include breakpoint-responsive("md") {
     visibility: visible;
     opacity: 1;
-    transition: opacity 0.5s linear;
+    transition: opacity 250ms linear;
   }
-
-  .fa-caret-down {
-    position: absolute;
-    top: 50%;
-    left: 90%;
-    transform: translateY(-50%);
-    font-size: 1rem;
-
-    @include breakpoint-responsive('md'){
-      left: 80%;
-    }
-    
-  }
-    // Class which show mobile navigation
-    .show {
-      @include breakpoint-responsive('md'){
-      visibility: visible;
-      opacity: 1;
-      transition: opacity 250ms linear;
-      }
-    }
-  
-    
-  
+}

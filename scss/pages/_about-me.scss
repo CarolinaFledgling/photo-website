@@ -1,11 +1,11 @@
-.about-me {  
+.about-me {
   .main {
     @include grid-center;
     padding: 0 2rem;
     grid-template-columns: minmax(200px, 1fr) minmax(800px, 1fr);
 
-// Responsive
-    @include breakpoint-responsive('md'){
+    // Responsive
+    @include breakpoint-responsive("md") {
       @include grid-center;
       padding: 0;
       grid-template-columns: 1fr;
@@ -16,8 +16,8 @@
   }
 
   .container {
-      min-height: 100vh;
-      height: auto;
+    min-height: 100vh;
+    height: auto;
   }
 
   .branding {
@@ -27,10 +27,9 @@
       width: 80%;
       image-rendering: auto;
     }
-    @include breakpoint-responsive('md'){
+    @include breakpoint-responsive("md") {
       display: none;
-      }
-
+    }
   }
 
   .description {
@@ -54,46 +53,44 @@
       height: 3px;
       background: $third-color;
     }
-// Responsive
-    @include breakpoint-responsive('md'){
-        padding: 2rem 0;
-        @include flex-center;
-
-        &__heading {
-          font-size: 0.8rem;
-        }
-
-        &__span {
-          margin-bottom: 10px;
-          width: 80px;
-          height: 3px;
-          background: $third-color;
-    }
-  }
-
-  
-
-  .name {
-    display: flex;
-    width: 400px;
-    height: 60px;
-    padding: 0 10px;
-    align-items: center;
-    background: $primary-color;
-    box-shadow: 2px 5px 5px 0px rgba(0, 0, 0, 0.15);
-    margin-top: 40px;
-    margin-left: -150px;
-    margin-bottom: 30px;
-
-    &__title {
-      @include font-details(1.8rem, 400);
-      padding: 10px;
-      color: $secondary-color;
-    }
-
     // Responsive
-    @include breakpoint-responsive('md'){
-       margin-top: 1.1rem;
+    @include breakpoint-responsive("md") {
+      padding: 2rem 0;
+      @include flex-center;
+
+      &__heading {
+        font-size: 0.8rem;
+      }
+
+      &__span {
+        margin-bottom: 10px;
+        width: 80px;
+        height: 3px;
+        background: $third-color;
+      }
+    }
+
+    .name {
+      display: flex;
+      width: 400px;
+      height: 60px;
+      padding: 0 10px;
+      align-items: center;
+      background: $primary-color;
+      box-shadow: 2px 5px 5px 0px rgba(0, 0, 0, 0.15);
+      margin-top: 40px;
+      margin-left: -150px;
+      margin-bottom: 30px;
+
+      &__title {
+        @include font-details(1.8rem, 400);
+        padding: 10px;
+        color: $secondary-color;
+      }
+
+      // Responsive
+      @include breakpoint-responsive("md") {
+        margin-top: 1.1rem;
         margin-left: 0px;
         margin-bottom: 1rem;
         width: 14rem;
@@ -105,31 +102,28 @@
           padding: 10px;
           color: $secondary-color;
         }
+      }
     }
-  }
 
+    .personal-info {
+      padding: 1rem 0;
+      @include font-details(1rem, 300, 1.8rem);
+      color: rgba(253, 253, 253, 0.5);
+      width: 80%;
 
-  .personal-info {
-    padding: 1rem 0;
-    @include font-details(1rem, 300, 1.8rem);
-    color: rgba(253, 253, 253, 0.5);
-    width: 80%;
-    
-    // Responsive
-    @include breakpoint-responsive('md'){
-      @include font-details(0.8rem, 400, 1.5rem);
+      // Responsive
+      @include breakpoint-responsive("md") {
+        @include font-details(0.8rem, 400, 1.5rem);
         padding: 1rem 0;
         color: rgba(253, 253, 253, 0.5);
         text-align: center;
+      }
+    }
+
+    .icon {
+      @include iconTwitter;
     }
   }
-
-  .icon {
-    @include iconTwitter;
-  }
-  }
 }
-  // Zapytać sie czy z potwarzajacymi się Iconami użyć mixina czy extend
-  // Czemu po zapisaniu powstaje nowy folder css jesli nie , zrobimy  pliki cząstkowe
-
-
+// Zapytać sie czy z potwarzajacymi się Iconami użyć mixina czy extend
+// Czemu po zapisaniu powstaje nowy folder css jesli nie , zrobimy  pliki cząstkowe

@@ -26,11 +26,11 @@ body {
 
   background-color: #1a2224;
   background-image: linear-gradient(
-        160deg,
-        #1c2021 50%,
-        #151819 50%,
-        #252527 100%
-      );
+    160deg,
+    #1c2021 50%,
+    #151819 50%,
+    #252527 100%
+  );
 }
 
 /* HEADER */
@@ -273,5 +273,3 @@ body {
     left: 75%;
   }
 }
-
-
