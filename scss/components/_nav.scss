@@ -27,7 +27,6 @@
        border-bottom: 1px solid $third-color;
     }
 
-    // Responsive 
     @include breakpoint-responsive('md'){
       display: block;
       margin: 0;
@@ -51,7 +50,7 @@
         @include font-details(0.9rem, 300); 
         color: $primary-color;
         padding: 10px;
-        transition: all 0.5s;
+        transition: all 0.5s linear;
         margin: 0 auto;
         text-align: center;
        

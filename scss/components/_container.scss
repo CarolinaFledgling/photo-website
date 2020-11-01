@@ -1,8 +1,8 @@
 .container {    
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 40px 1fr 20px;
+    grid-template-columns: $main-height;
+    grid-template-rows: $header-height $main-height $footer-height;
     grid-template-areas:
       "header"
       "main"

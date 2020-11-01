@@ -10,10 +10,6 @@
     justify-content: center;
 }
 
-@mixin transition {
-    transition: 0.5s linear;
-}
-
 @mixin circle {
     content: "";
     position: absolute;
@@ -41,7 +37,7 @@
     &__fab:hover {
         background: $third-color;
         color: $primary-color;
-        transition: 0.5s linear;
+        transition: all 0.5s linear;
     }
 }
 
@@ -58,12 +54,8 @@
 
 
 // Responsive
-
-
 @mixin breakpoint-responsive($size) {
     @media (max-width: map-get($breakpoints, $size)) {
       @content;
     }
 }
-
-// Upewnic sie jak działa map-get

@@ -5,10 +5,10 @@
 @import "base/_reset";
 @import "base/_typography";
 
-@import "components/_slideShow";
+@import "components/_slide-show";
 @import "components/_nav";
 @import "components/_sub-nav";
-@import "components/_menuHamburger";
+@import "components/_menu-hamburger";
 @import "components/_container";
 
 // Layouts
@@ -17,7 +17,6 @@
 @import "layouts/_header";
 
 // Pages
-@import "pages/_home";
 @import "pages/_about-me";
 @import "pages/_contact";
 

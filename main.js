@@ -17,9 +17,6 @@ hamburgerMenu();
 
 
 // Button Gallery SubMenu
-
-
-
 let subMenuVisible = false;
 
 btnGallery.parentElement.addEventListener('mouseenter', function () {
