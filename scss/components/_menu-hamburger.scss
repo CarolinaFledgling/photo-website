@@ -1,0 +1,41 @@
+/* Button Hamburger */
+
+.menu {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+  width: 2rem;
+  height: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+
+   &__line{
+      display: none;
+      width: 100%;
+      height: 0.1rem;
+      background-color: $third-color;
+      transition: all 0.5s linear;
+      cursor: pointer;
+      
+      @include breakpoint-responsive('md'){
+        display: block;
+      }
+   }
+}
+
+
+.change .menu__line--1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.change .menu__line--2 {
+  opacity: 0;
+}
+
+.change .menu__line--3 {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+

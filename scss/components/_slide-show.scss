@@ -1,0 +1,27 @@
+/* SLIDER  */
+.main {
+   grid-area: main;
+}
+
+.slider {
+   @include grid-center;
+   height: 100%;
+   width: 100%;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr;
+   grid-template-areas: "images";
+
+   // #{$body_padding}
+   &__img {
+      height: calc(100vh - #{$footer-height} - #{$header-height});
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      object-fit: contain;
+      /* object-position: top ; */
+      grid-area: images;
+      image-rendering: auto;
+      image-rendering: crisp-edges;
+      pointer-events: none;
+   }
+}
