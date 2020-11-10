@@ -2,7 +2,7 @@
   .main {
     @include grid-center;
     height: 100%;
-    grid-template-columns: minmax(200px, 1fr) minmax(500px, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 
     @include breakpoint-responsive('md'){
       @include grid-center;
@@ -28,7 +28,8 @@
     @include flex-center;
 
     &__img {
-      width: 80%;
+      width: 100%;
+      padding-left: 1rem;
       image-rendering: auto;
     }
     @include breakpoint-responsive('md'){
@@ -42,6 +43,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 1rem 0;
 
     &__heading {

@@ -646,7 +646,7 @@ a {
   grid-area: footer;
   text-align: center;
   font-size: 0.7rem;
-  color: #fff;
+  color: rgba(253, 253, 253, 0.685);
   line-height: 20px;
 }
 
@@ -680,8 +680,8 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
-  -ms-grid-columns: minmax(200px, 1fr) minmax(500px, 1fr);
-      grid-template-columns: minmax(200px, 1fr) minmax(500px, 1fr);
+  -ms-grid-columns: (minmax(0, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 @media (max-width: 768px) {
@@ -727,7 +727,8 @@ a {
 }
 
 .about-me .branding__img {
-  width: 80%;
+  width: 100%;
+  padding-left: 1rem;
   image-rendering: auto;
 }
 
@@ -749,6 +750,9 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1rem 0;
 }
 
@@ -841,7 +845,7 @@ a {
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.8rem;
-  color: rgba(253, 253, 253, 0.5);
+  color: rgba(253, 253, 253, 0.685);
   width: 80%;
 }
 
@@ -851,7 +855,7 @@ a {
     font-weight: 400;
     line-height: 1.5rem;
     padding: 1rem 0;
-    color: rgba(253, 253, 253, 0.5);
+    color: rgba(253, 253, 253, 0.685);
     text-align: center;
   }
 }
