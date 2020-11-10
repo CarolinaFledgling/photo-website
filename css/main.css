@@ -804,8 +804,8 @@ a {
   background: #fff;
   -webkit-box-shadow: 2px 5px 5px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 2px 5px 5px 0px rgba(0, 0, 0, 0.15);
-  margin-top: 40px;
-  margin-left: -150px;
+  margin-top: 20px;
+  margin-left: 0px;
   margin-bottom: 30px;
 }
 
