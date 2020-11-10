@@ -1,8 +1,8 @@
 .about-me {  
   .main {
     @include grid-center;
-    padding: 0 2rem;
-    grid-template-columns: minmax(200px, 1fr) minmax(800px, 1fr);
+    height: 100%;
+    grid-template-columns: minmax(200px, 1fr) minmax(500px, 1fr);
 
     @include breakpoint-responsive('md'){
       @include grid-center;
@@ -12,6 +12,11 @@
       width: 100%;
       height: 100%;
     }
+  }
+
+  .info-details__link{
+    color:$dark-black;
+    font-size: 2rem;
   }
 
   .container {
@@ -94,6 +99,7 @@
         width: 14rem;
         height: 40px;
         padding: 0 8px;
+        margin-top: 20px;
 
         &__title {
           @include font-details(1.2rem, 400);
