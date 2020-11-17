@@ -16,7 +16,6 @@
   
   .contact-info{
       @include flex-center;
-      position: relative;
       max-width: 560px;
       flex-direction: column;
       padding: 2rem;
@@ -30,6 +29,7 @@
         @include font-details(1.1rem, 400); 
           margin-bottom: 2rem;
           letter-spacing: 1px;
+          font-size: 1.5rem;
         
        }
   
@@ -40,26 +40,15 @@
           margin-bottom: 2rem;
        }
   
-       &__::after{
-          @include circle;
-          top: 307px;
-          left: -100px;
-        
-       }
-       &__::before{
-          @include circle;
-          top: -100px;
-          right: 0px;
-        
-       }
+      
 
        @include breakpoint-responsive('md'){
-        padding: 1rem;
+        padding: 3rem;
   
         &__title {
-          margin-bottom: 1rem;
+          margin-bottom: 3rem;
           margin-top: 1rem;
-          font-size: 1rem;
+          font-size: 2rem;
         }
   
         &__text {
@@ -100,35 +89,13 @@
           text-decoration: none;
           color: $secondary-color;
           text-transform: lowercase;
+          font-size: 1.4rem;
+      }
+
+      &__link--instagram{
+        text-transform: capitalize;
       }
   
     }
-  
-    .social-media {
-      padding: 1rem 0 0 0;
-      
-      &__text{
-        @include font-details(1rem, 400); 
-          color: $secondary-color;
-          margin-bottom: 0.8rem;
-          text-align: center;
-      }
-  
-    }
-  
-  
-    .icon{
-      @include iconTwitter;
-      text-align: center;
-      &__fab{
-          background: $third-color;
-          color: $primary-color;
-         
-      }
-  
-      &__fab:hover{
-          background: $secondary-color;
-          color: $primary-color;
-      }
-    }
-  }
+     
+}

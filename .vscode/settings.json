@@ -28,4 +28,5 @@
     },
     "editor.columnSelection": false,
     "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.port": 5501,
 }
