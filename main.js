@@ -31,15 +31,11 @@ btnGallery.parentElement.addEventListener('mouseenter', function () {
 btnGallery.parentElement.addEventListener('mouseleave', function () {
   if (subMenuVisible) {
     navSubList.classList.remove('showSubMenu')
-    subMenuVisible = false; // zapytac sie dlaczego tu i tam ustawilismy false i true 
+    subMenuVisible = false; 
   }
 })
 
-
-
-
 //Hiding the mobile menu when user clicks outside 
-
 
 let specifiedElement = document.getElementById('box');
 
@@ -58,13 +54,12 @@ document.addEventListener('click', function (event) {
 
 
 let liczba = 0; //start point 
-// let images = [...document.querySelectorAll('.slider__img')]
+
 let time = 3000;
 mainSlider();
 
 function mainSlider() {
   let i;
-  // let images = [...document.querySelectorAll('.slider__img')]
   let images = document.getElementsByClassName('slider__img')
   for (i = 0; i < images.length; i++) {
     images[i].style.display = "none";
