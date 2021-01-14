@@ -13,7 +13,7 @@ A Fullscreen Responsive Website , with 2 photo slideshows, and dropdown menu for
 
 
 
-## Preview the website live on : [DEMO]( https://carolinafledgling.github.io/Bookmark-landing-page/)
+## Preview the website live on : [DEMO]( https://carolinafledgling.github.io/photo-website/.)
 
 ## Screenshots
 ![](zdjecia/readme.jpg)
