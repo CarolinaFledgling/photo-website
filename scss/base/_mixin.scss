@@ -10,48 +10,13 @@
     justify-content: center;
 }
 
-@mixin circle {
-    content: "";
-    position: absolute;
-    width: 110px;
-    height: 110px;
-    border: 22px solid #b64941;
-    border-radius: 50%;
-    opacity: 0.3;
-}
-
-@mixin iconTwitter {
-    margin-top: 2rem;
-
-    &__fab {
-        width: 3rem;
-        height: 3rem;
-        background: $primary-color;
-        border-radius: 50%;
-        text-align: center;
-        color: $secondary-color;
-        font-size: 1.3rem;
-        line-height: 3rem;
-    }
-
-    &__fab:hover {
-        background: $third-color;
-        color: $primary-color;
-        transition: all 0.5s linear;
-    }
-}
-
 // Fonts
 
 @mixin font-details ($size, $font-weight, $line-height: 1.5rem) {
-
     font-size: $size;
     font-weight: $font-weight;
     line-height: $line-height;
 }
-
-
-
 
 // Responsive
 @mixin breakpoint-responsive($size) {
