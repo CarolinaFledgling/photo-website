@@ -5,7 +5,7 @@
 ## Description 
 
 This project was made independently and without any starter code and without any template design.
-I created this website to pratice my knowledge of HTML , CSS , SASS and pure Javascrip 
+I created this website to pratice my knowledge of HTML , CSS , SASS and pure Javascript 
 
 ## General info
 A Fullscreen Responsive Website , with 2 photo slideshows, and dropdown menu for smaller devices
