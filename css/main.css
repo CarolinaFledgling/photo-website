@@ -722,6 +722,8 @@ a {
 
 .about-me .description__heading {
   color: #b64941;
+  text-transform: uppercase;
+  letter-spacing: 3px;
   font-size: 1.1rem;
   font-weight: 600;
   line-height: 1.5rem;
@@ -767,6 +769,19 @@ a {
   line-height: 1.8rem;
   color: rgba(253, 253, 253, 0.5);
   width: 80%;
+}
+
+.about-me .icon__fab {
+  font-size: 2rem;
+  padding: .5rem;
+  border-radius: 50%;
+  -webkit-transition: all linear 0.1s;
+  transition: all linear 0.1s;
+}
+
+.about-me .icon__fab:hover {
+  color: #b64941;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 768px) {
@@ -934,8 +949,8 @@ a {
 .contact .info-details__link {
   text-decoration: none;
   color: #333;
-  text-transform: lowercase;
   font-size: 1.2rem;
+  text-transform: lowercase;
 }
 
 .contact .info-details__address {

@@ -28,6 +28,8 @@
 
     &__heading {
       color: $third-color;
+      text-transform: uppercase;
+      letter-spacing: 3px;
       @include font-details(1.1rem, 600);
     }
 
@@ -65,6 +67,20 @@
     color: rgba(253, 253, 253, 0.5);
     width: 80%;
   }
+
+  .icon__fab{
+    font-size: 2rem;
+    padding: .5rem;
+    border-radius: 50%;
+    transition: all linear 0.1s;
+
+    &:hover{
+      color:$third-color;
+      background-color: $primary-color;
+    }
+  }
+
+
 
 
   @media screen and (max-width: 768px) {
